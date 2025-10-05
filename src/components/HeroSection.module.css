@@ -1,0 +1,28 @@
+/* D:\Vijay Tex\vijay-tex\src\components\HeroSection.module.css */
+.hero {
+    /* Using a dark green background for the hero for a strong, professional look */
+    background-color: var(--color-green); 
+    color: var(--color-white);
+    padding: 100px 5%;
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Important for clean animations */
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--color-white); /* White text on green background */
+    max-width: 800px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    font-weight: 300;
+    opacity: 0.9;
+}

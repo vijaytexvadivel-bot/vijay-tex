@@ -1,0 +1,41 @@
+/* src/components/Footer.module.css */
+.footer {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding-top: 40px;
+  font-size: 0.9em;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.infoGroup {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.infoGroup h3, .infoGroup h4 {
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.productNote {
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+.copyright {
+  background-color: var(--color-dark); 
+  text-align: center;
+  padding: 15px 5%;
+  margin-top: 20px;
+  font-size: 0.8em;
+}

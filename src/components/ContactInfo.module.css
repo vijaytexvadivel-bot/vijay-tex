@@ -1,0 +1,45 @@
+/* D:\Vijay Tex\vijay-tex\src\components\ContactInfo.module.css */
+.contact {
+    background-color: #f4f4f4; /* Light grey for subtle separation */
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: var(--color-green);
+    margin-bottom: 40px;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.detail {
+    text-align: left;
+    padding: 20px;
+    border-left: 5px solid var(--color-green);
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.label {
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.value {
+    color: var(--color-dark);
+    font-size: 1em;
+    line-height: 1.5;
+}

@@ -1,0 +1,40 @@
+/* src/components/ProductShowcase.module.css */
+.showcase h2 {
+    text-align: center;
+    color: var(--color-green);
+    font-size: 2.5em;
+    margin-bottom: 2em;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--color-white);
+    transition: transform 0.3s ease;
+}
+
+.imagePlaceholder {
+    height: 350px;
+    width: 100%;
+    background-color: #f0f0f0; /* Light placeholder background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-dark);
+}
