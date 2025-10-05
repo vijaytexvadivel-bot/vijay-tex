@@ -1,0 +1,35 @@
+/* src/App.css */
+:root {
+  /* Vijay Tex Theme Colors */
+  --color-green: #006e51; /* Classic Forest Green (Professional) */
+  --color-dark: #1a1a1a; /* Dark Accent */
+  --color-white: #ffffff;
+  --color-background: var(--color-white);
+  --color-text: var(--color-dark);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+/* Base headings */
+h1, h2, h3 {
+  color: var(--color-dark);
+  margin-bottom: 0.5em;
+}
+
+section {
+  padding: 40px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
