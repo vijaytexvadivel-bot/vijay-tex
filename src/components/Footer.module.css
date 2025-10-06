@@ -39,3 +39,30 @@
   margin-top: 20px;
   font-size: 0.8em;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* --- Mobile Responsiveness --- */
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack all info groups */
+        gap: 20px;
+        text-align: center;
+    }
+
+    .infoGroup {
+        min-width: unset; /* Allow groups to take full width */
+        text-align: center;
+    }
+
+    /* Remove the left border style from the detail block when stacked */
+    .infoGroup h3, .infoGroup h4 {
+        margin-top: 15px;
+    }
+}

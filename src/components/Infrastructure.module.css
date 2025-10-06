@@ -45,3 +45,20 @@
     color: var(--color-dark);
     border-top: 3px solid var(--color-green);
 }
+
+@media (max-width: 600px) {
+    .infrastructure h2 {
+        font-size: 1.6em;
+        margin-bottom: 2em;
+    }
+
+    /* Force a single column layout on very small screens */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .imagePlaceholder {
+        height: 200px; /* Smaller image height for mobile */
+    }
+}

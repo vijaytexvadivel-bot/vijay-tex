@@ -56,3 +56,72 @@
   width: 100%;
   left: 0;
 }
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+/* --- Mobile Responsiveness --- */
+
+/* ADD this to the end of src/components/Header.module.css */
+
+@media (max-width: 768px) {
+    /* 1. Stack Header Elements */
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 2. Move Nav Controls below Logo */
+    .navControls {
+        margin-top: 10px;
+        /* Ensure controls (toggle + nav) take full width for the scroll to work */
+        width: 100%; 
+        justify-content: center; /* Center the toggle button and navigation */
+    }
+    
+    /* 3. Make the .nav container horizontally scrollable */
+    .nav {
+        /* Reset any conflicting styles from the vertical stack */
+        flex-direction: row; 
+        
+        /* Key Properties for Horizontal Scroll */
+        width: 100%;
+        overflow-x: scroll; /* Allows horizontal scrolling */
+        overflow-y: hidden; /* Prevents accidental vertical scroll */
+        white-space: nowrap; /* Ensures links stay on one line */
+        
+        /* Ensure links don't wrap */
+        flex-wrap: nowrap; 
+        
+        /* Standard browser property for better scrolling on mobile */
+        -webkit-overflow-scrolling: touch;
+        
+        /* Hide the scrollbar for a cleaner look */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE and Edge */
+        padding-bottom: 5px; /* Add some padding to prevent links from touching the edge */
+    }
+
+    /* Hide scrollbar for Chrome/Safari */
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* 4. Ensure Links Remain Compact */
+    .navLink {
+        /* Must be display inline-block or flex item to stay in one row */
+        display: inline-block; 
+        /* Add padding around links to make them easy to tap */
+        padding: 5px 15px; 
+        text-align: center;
+        width: auto; /* Allow links to take only the width they need */
+        flex-shrink: 0; /* Prevents links from shrinking */
+    }
+
+    /* 5. Adjust logo size */
+    .logo {
+        height: 50px;
+    }
+}

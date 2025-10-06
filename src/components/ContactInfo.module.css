@@ -43,3 +43,31 @@
     font-size: 1em;
     line-height: 1.5;
 }
+
+.infoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Already helps, but we'll force stacking below */
+}
+
+/* --- Mobile Responsiveness --- */
+
+@media (max-width: 600px) {
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    /* Stack the info blocks vertically */
+    .infoContainer {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .detail {
+        width: 90%; /* Take up most of the mobile screen width */
+        min-width: unset; /* Remove fixed minimum width */
+        max-width: 90%; /* Confine width */
+    }
+}

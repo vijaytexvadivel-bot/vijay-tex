@@ -38,3 +38,39 @@
     font-weight: 500;
     color: var(--color-dark);
 }
+
+.grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* --- Mobile Responsiveness --- */
+
+@media (max-width: 768px) {
+    .showcase h2 {
+        font-size: 1.8em;
+        margin-bottom: 1.5em;
+    }
+
+    /* Switch the fabric grid to a single column stack */
+    .grid {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Take up most of the screen width */
+        max-width: 90%; /* Override fixed max-width */
+    }
+
+    .imagePlaceholder {
+        height: 250px; /* Reduce image height on small screens */
+    }
+}
